@@ -1,0 +1,138 @@
+.accordian_main {
+  &_img-1 {
+    position: absolute;
+  }
+  &_img-2 {
+    background-size: contain;
+  }
+}
+.accordian {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__heading-box {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+.accordians {
+  width: 70%;
+  box-shadow: 0 2rem 4rem rgba(#000, 0.1);
+  margin: 5rem auto;
+  border-radius: 1rem;
+  z-index: 1;
+
+  background-color: $color-white;
+
+  &__bg {
+    &-img {
+      position: absolute;
+      z-index: -10;
+      &--1 {
+        top: 0;
+        left: 0;
+        height: 97%;
+        width: 100vw;
+      }
+
+      &--2 {
+        height: 30rem;
+        right: 4%;
+        top: 15%;
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    gap: 4rem;
+    border-radius: 1rem 1rem 0 0;
+    padding: 4rem 3rem;
+    align-items: center;
+
+    border-bottom: 1px solid $color-grey-dark-1;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__heading-box {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $color-grey-dark-1;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1rem;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  &__icon {
+    color: $color-blue-dark-3;
+    font-size: 3rem;
+
+    &--open {
+      display: inline-block;
+    }
+    &--close {
+      display: none;
+    }
+  }
+
+  &__button-box {
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+  }
+  &__query-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__question {
+    font-size: 1.8rem;
+    color: $color-grey-dark-1;
+    font-weight: 600;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+    }
+  }
+  &__ans {
+    font-size: 1.4rem;
+    color: $color-grey-dark-1;
+    transition: all linear 0.3s;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden .accordians__icon--open {
+  display: none;
+}
+.hidden .accordians__icon--close {
+  display: inline;
+}

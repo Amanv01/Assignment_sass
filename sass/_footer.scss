@@ -1,0 +1,62 @@
+.footer {
+  background-color: #0c0c0c;
+  &_nav {
+    background-color: #2a2a2a;
+
+    &-text {
+      text-align: center;
+      font-size: 1.5rem;
+      color: $color-grey-light-3;
+      padding: 0.5rem 0;
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &_content {
+    &-item {
+      padding: 2rem 2rem;
+      width: 50%;
+      margin: 0 auto;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding: 1rem 1rem;
+        // width: 60%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 60%;
+        padding: 0.5rem 0.5rem;
+      }
+      @media only screen and (max-width: $bp-smaller) {
+        width: 60%;
+        padding: 0rem 0rem;
+      }
+    }
+    &-para {
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      color: $color-grey-light-2;
+      margin-top: 0.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.2rem;
+      }
+    }
+    &-text {
+      font-size: 1.3rem;
+      text-align: center;
+      color: $color-grey-light-2;
+      margin: 1.5rem 0;
+    }
+    &-img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_image {
+      width: 25%;
+    }
+  }
+}

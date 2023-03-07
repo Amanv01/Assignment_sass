@@ -1,0 +1,19 @@
+.galleries {
+}
+.gallery {
+  width: 70%;
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_img {
+    width: 17%;
+  }
+}
+.icon_left {
+  width: 2%;
+}
+.icon_right {
+  width: 2%;
+}

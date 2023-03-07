@@ -1,0 +1,31 @@
+.navigations {
+  display: flex;
+  justify-content: space-around;
+  background-color: aquamarine;
+
+  @media only screen and (max-width: 56.5em) {
+    justify-content: space-between;
+  }
+  &_img {
+    // width: 12%;
+    // object-fit: contain;
+    padding: 1rem 2rem;
+
+    @media only screen and (max-width: 56.5em) {
+      width: 30%;
+    }
+
+    // @media only screen and (max-width: $bp-small) {
+    //   width: 30%;
+    //   padding: 0.4rem 2rem;
+    // }
+    // @media only screen and (max-width: $bp-smaller) {
+    //   width: 30%;
+    //   padding: 0.3rem 2rem;
+    // }
+    // @media only screen and (max-width: $bp-smallest) {
+    //   width: 50%;
+    //   padding: 0.2rem 1.5rem;
+    // }
+  }
+}
